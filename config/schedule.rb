@@ -19,9 +19,7 @@
 
 # Learn more: http://github.com/javan/whenever
 
-
-
 set :output, "#{path}/log/cron_log"
 every 1.minute do
-	command "ruby '#{path}/scripts/parser.rb'"
+    script "parser.rb"
 end
